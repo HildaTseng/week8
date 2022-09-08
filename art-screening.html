@@ -1,9 +1,62 @@
----
-title: 藝術品系列-篩選
-layout: ./app/layout.ejs
-engine: ejs
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>藝術品系列-篩選</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- icon  -->
+    <script src="https://kit.fontawesome.com/9e27547df9.js" crossorigin="anonymous"></script>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap" rel="stylesheet">
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    
+    <header class="border-bottom ">
+      <div class="container ">
+        <div class="row">
+          <div class=" col col-lg-5 py-lg-8 py-4 ">
+            <h1><a class="logo-img" href="./index.html">ART NFT</a></h1>
+          </div>
+          <div class="col-1 col-lg-4 row align-items-center g-0  search-item">
+            <form class="d-flex justify-content-center px-lg-12 py-lg-8">
+              <input class="form-control bg-primary border-0 p-0 d-none d-lg-block" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+              <a href="#" ><i class="fa-solid fa-magnifying-glass fs-4"></i></a>
+            </form>
+          </div>
+          <nav class="nav col-lg-3 d-flex align-items-center p-0 d-none d-lg-block ">
+            <a class="nav-link col-lg-4 fw-bold " href="./art-screening.html">探索</a>
+            <a class="nav-link col-lg-4 fw-bold border-start" href="#">市值</a>
+            <a class="nav-link col-lg-3 border-start" href="#"><i class="fa-solid fa-wallet fs-3 align-middle"></i></a>
+          </nav>
+          <nav class="nav-burger d-lg-none d-block col-1 p-0 d-flex align-items-center justify-content-center">
+            <a data-bs-toggle="collapse" href="#collapseburger" role="button" aria-expanded="true" aria-controls="collapseburger" ><i class="fa-solid fa-bars fs-5"></i></a>          
+          </nav>
+
+        </div>             
+      </div>         
+    </header>
+    <div class="collapse header-collapse " id="collapseburger">
+      <nav class="card-body bg-white d-flex flex-column align-items-center justify-content-between pb-8 pt-0">   
+        <a class="nav-burger-link fw-bold py-6 border-bottom w-100 text-center" href="./art-screening.html">探索</a>         
+        <a class="nav-burger-link fw-bold py-6 border-bottom w-100 text-center " href="#">市值</a>           
+        <a class="nav-burger-link fw-bold py-6 border-bottom w-100 text-center " href="#">連結錢包</a>
+      </nav>
+    </div>    
+
+    
 <main>
     <section>
         <div class="container mt-6 mt-lg-10">
@@ -360,3 +413,30 @@ engine: ejs
     </section>
 
 </main>
+
+
+    
+    
+    <footer class="mt-5 border-top position-relative">
+      <p class="pt-8 pb-6 text-center">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+
+</html>
