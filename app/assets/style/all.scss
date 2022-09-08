@@ -1,0 +1,13 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+@import './base/base';
+@import './helpers/util';
+@import './components/button';
+@import './layout/header';
+@import './layout/footer';
+@import './pages/index';
+@import './pages/artist-description';
+@import './pages/art-screening';
